@@ -7,7 +7,13 @@ A command-line utility for quick HŽ train schedule listing.
 ## Installation
 
 ```bash
-$ npm install -g hzpp
+$ npm i -g hzpp
+```
+
+If you're upgrading from `1.0.0` to a newer version please uninstall first or delete the old configuration file.
+
+```bash
+$ npm rm -g hzpp
 ```
 
 ## Usage

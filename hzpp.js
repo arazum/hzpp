@@ -7,6 +7,7 @@ var util = require('util');
 var jsdom = require('jsdom');
 var moment = require('moment');
 var jquery = require('jquery');
+var merge = require('merge');
 
 var config = require('./config').load();
 
@@ -20,19 +21,21 @@ var date = now.format('DD.MM.YY');
 output('\n');
 
 config.lines.forEach(function(line) {
+	line = merge.recursive(true, config.defaults, line);
+	
 	jsdom.env({
 		url: util.format(urlString, line.from, line.to, date),
-		done: handler.bind(null, line.label)
+		done: handler.bind(null, line)
 	});
 });
 
-function handler(label, error, window) {
+function handler(line, error, window) {
 	if (error !== null) {
 		console.error(error);
 		return;
 	}
 	
-	output(' [' + label + ']\n');
+	output(' [' + line.label + ']\n');
 	
 	var $ = jquery(window);
 	var index = 0;
@@ -41,7 +44,7 @@ function handler(label, error, window) {
 		var text = $(this).html();
 		var time = moment(text, 'HH:mm');
 		
-		if (now.isBefore(time) && index < config.limit) {
+		if (now.isBefore(time) && index < line.limit) {
 			output('  ' + text);
 			index++;
 		}

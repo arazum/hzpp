@@ -1,5 +1,7 @@
 {
-	"limit": "10",
+	"defaults": {
+		"limit": "10"
+	},
 	"lines": [
 		{
 			"label": "Čulinec -> Zagreb",

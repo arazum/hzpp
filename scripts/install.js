@@ -5,5 +5,9 @@ var fs = require('fs');
 var configPath = require('../config').path;
 var defaultConfigPath = './defaultConfig.json';
 
-var configData = fs.readFileSync(defaultConfigPath);
-fs.writeFileSync(configPath, configData);
+fs.access(configPath, fs.F_OK, function(error) {
+	if (error) {
+		var configData = fs.readFileSync(defaultConfigPath);
+		fs.writeFileSync(configPath, configData);
+	}
+});

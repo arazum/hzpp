@@ -1,9 +1,11 @@
 {
   "name": "hzpp",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "HŽ train schedule in seconds.",
   "author": "Antun Razum <antun.razum@gmail.com>",
-  "keywords": ["hzpp"],
+  "keywords": [
+    "hzpp"
+  ],
   "files": [
     "hzpp.js",
     "config.js",
@@ -15,16 +17,17 @@
     "hzpp": "./hzpp.js"
   },
   "repository": {
-	"type": "git",
-	"url": "https://github.com/arazum/hzpp.git"
+    "type": "git",
+    "url": "https://github.com/arazum/hzpp.git"
   },
   "dependencies": {
-	"jsdom": "<4.0.0",
-	"jquery": "*",
-	"moment": "*"
+    "jquery": "^2.1.4",
+    "jsdom": "<4.0.0",
+    "merge": "^1.2.0",
+    "moment": "^2.10.2"
   },
   "scripts": {
-	"install": "scripts/install.js"
+    "install": "scripts/install.js"
   },
   "readmeFilename": "README.md",
   "license": "MIT"
