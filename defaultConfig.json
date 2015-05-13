@@ -1,6 +1,7 @@
 {
 	"defaults": {
-		"limit": "10"
+		"limit": 10,
+		"showArrival": true
 	},
 	"lines": [
 		{
