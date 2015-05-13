@@ -12,6 +12,10 @@
   "bin": {
     "hzpp": "./hzpp.js"
   },
+  "repository": {
+	"type": "git",
+	"url": "https://github.com/arazum/hzpp.git"
+  }
   "main": "hzpp.js",
   "dependencies": {
 	"jsdom": "<4.0.0",
