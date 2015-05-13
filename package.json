@@ -8,7 +8,8 @@
     "hzpp.js",
     "config.js",
     "help.js",
-    "config.json"
+    "defaultConfig.json",
+    "scripts"
   ],
   "bin": {
     "hzpp": "./hzpp.js"
@@ -21,6 +22,9 @@
 	"jsdom": "<4.0.0",
 	"jquery": "*",
 	"moment": "*"
+  },
+  "scripts": {
+	"install": "scripts/install.js"
   },
   "readmeFilename": "README.md",
   "license": "MIT"

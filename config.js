@@ -1,8 +1,7 @@
 var fs = require('fs');
 
 
-var configName = 'config.json';
-var configPath = __dirname + '/' + configName;
+var configPath = __dirname + '/' + 'config.json';
 
 function load() {
 	return JSON.parse(fs.readFileSync(configPath));

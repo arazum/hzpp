@@ -22,7 +22,7 @@ Call the program with any arguments to show help.
 
 ## Configuration
 
-Edit the `config.json` file located in the modules root folder to configure program options.
+Edit the `config.json` file located in the module's root folder to configure program options.
 To get the configuration file location enter the following command.
 
 ```bash
