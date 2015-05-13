@@ -5,6 +5,7 @@
   "author": "Antun Razum <antun.razum@gmail.com>",
   "keywords": ["hzpp"],
   "files": [
+    "hzpp.js",
     "config.js",
     "help.js",
     "config.json"
@@ -15,8 +16,7 @@
   "repository": {
 	"type": "git",
 	"url": "https://github.com/arazum/hzpp.git"
-  }
-  "main": "hzpp.js",
+  },
   "dependencies": {
 	"jsdom": "<4.0.0",
 	"jquery": "*",
