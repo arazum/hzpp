@@ -1,0 +1,20 @@
+{
+	"limit": "10",
+	"lines": [
+		{
+			"label": "Čulinec -> Zagreb",
+			"from": "%C8ULINEC",
+			"to": "ZAGREB+GL.+KOL."
+		},
+		{
+			"label": "Zagreb -> Čulinec",
+			"from": "ZAGREB+GL.+KOL.",
+			"to": "%C8ULINEC"
+		},
+		{
+			"label": "Čulinec -> Dugo Selo",
+			"from": "%C8ULINEC",
+			"to": "DUGO+SELO"
+		}
+	]
+}

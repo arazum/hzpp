@@ -1,0 +1,23 @@
+{
+  "name": "hzpp",
+  "version": "1.0.0",
+  "description": "HŽ train schedule in seconds.",
+  "author": "Antun Razum <antun.razum@gmail.com>",
+  "keywords": ["hzpp"],
+  "files": [
+    "config.js",
+    "help.js",
+    "config.json"
+  ],
+  "bin": {
+    "hzpp": "./hzpp.js"
+  },
+  "main": "hzpp.js",
+  "dependencies": {
+	"jsdom": "<4.0.0",
+	"jquery": "*",
+	"moment": "*"
+  },
+  "readmeFilename": "README.md",
+  "license": "MIT"
+}
